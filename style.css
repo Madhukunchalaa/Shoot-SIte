@@ -1630,8 +1630,31 @@ section {
 
     /* Navigation */
     .navbar-brand img { height: 40px !important; }
-    .navbar { padding: 10px 0 !important; background: #fff !important; }
-    .nav-link { color: #1a1a1a !important; margin: 10px 0; font-size: 0.9rem; }
+    .navbar { padding: 10px 0 !important; background: #fff !important; box-shadow: 0 2px 20px rgba(0,0,0,0.05); }
+    .nav-link { color: #1a1a1a !important; margin: 10px 0; font-size: 0.9rem; text-align: center; }
+    
+    /* Make Hamburger Icon Visible on White */
+    .navbar-toggler { border-color: rgba(0,0,0,0.1) !important; padding: 4px 8px; }
+    .navbar-toggler-icon { 
+        filter: invert(1); /* Flip from white to black for visibility */
+    }
+    
+    /* Mobile Dropdown Styling */
+    .dropdown-menu { 
+        background: #f8f9fa !important; 
+        border: none; 
+        text-align: center;
+        box-shadow: none;
+    }
+    .dropdown-item { color: #1a1a1a !important; padding: 10px 0; }
+    
+    /* Ensure collapse menu has enough space */
+    .navbar-collapse {
+        background: #fff;
+        padding: 20px 0;
+        border-top: 1px solid #eee;
+        margin-top: 10px;
+    }
 
     /* Hero & Viewfinder */
     .hero { height: 80vh; }
