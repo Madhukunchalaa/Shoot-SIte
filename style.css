@@ -1649,6 +1649,10 @@ section {
     .exp-light-title { font-size: 2.2rem; }
     .exp-light-step-num { font-size: 2.5rem; }
     
+    /* About Section Mobile Gap */
+    #about { padding-top: 80px !important; }
+    .about-img-container { padding: 0 15px !important; }
+    
     /* Contact Form */
     .contact-section { padding-top: 40px; }
     .contact-info-card { padding: 30px !important; margin-bottom: 30px; }
