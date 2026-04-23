@@ -66,55 +66,117 @@
         </div>
     </header>
 
-    <section class="py-5">
+    <section class="contact-section py-5 overflow-hidden">
+        <!-- Floral Decorations -->
+        <div class="flower-decoration top-left" data-aos="fade-down-right">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100 20C80 20 60 40 60 60C60 80 80 100 100 100C120 100 140 80 140 60C140 40 120 20 100 20Z" fill="var(--secondary-color)" fill-opacity="0.1"/>
+                <path d="M100 180C120 180 140 160 140 140C140 120 120 100 100 100C80 100 60 120 60 140C60 160 80 180 100 180Z" fill="var(--secondary-color)" fill-opacity="0.1"/>
+                <circle cx="100" cy="100" r="10" fill="var(--secondary-color)"/>
+            </svg>
+        </div>
+        <div class="flower-decoration bottom-right" data-aos="fade-up-left">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100 20C80 20 60 40 60 60C60 80 80 100 100 100C120 100 140 80 140 60C140 40 120 20 100 20Z" fill="var(--secondary-color)" fill-opacity="0.1"/>
+                <path d="M100 180C120 180 140 160 140 140C140 120 120 100 100 100C80 100 60 120 60 140C60 160 80 180 100 180Z" fill="var(--secondary-color)" fill-opacity="0.1"/>
+                <circle cx="100" cy="100" r="10" fill="var(--secondary-color)"/>
+            </svg>
+        </div>
+
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 mb-5" data-aos="fade-right">
-                    <h2>Get in Touch</h2>
-                    <p class="mb-5">We only take a limited number of weddings each year to ensure the highest quality of service and attention to detail. Please share some details about your celebration.</p>
-                    
-                    <div class="mb-4">
-                        <h5 class="text-gold">Studio</h5>
-                        <p>123 Luxury Lane, London, UK</p>
-                    </div>
-                    <div class="mb-4">
-                        <h5 class="text-gold">Email</h5>
-                        <p>hello@auraweddings.com</p>
-                    </div>
-                    <div class="mb-4">
-                        <h5 class="text-gold">Follow</h5>
-                        <div class="fs-4">
-                            <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="me-3"><i class="fab fa-pinterest"></i></a>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5" data-aos="fade-right">
+                    <div class="contact-info-card p-5">
+                        <span class="text-gold text-uppercase letter-spacing-5 d-block mb-3">RSVP</span>
+                        <h2 class="display-5 mb-4">Let's Tell Your Story</h2>
+                        <p class="mb-5 text-muted lead">Limited availability for 2026-2027. We prioritize deep connections with our couples to capture truly authentic moments.</p>
+                        
+                        <div class="contact-detail mb-4">
+                            <i class="fas fa-map-marker-alt text-gold mb-2"></i>
+                            <p class="small text-uppercase letter-spacing-2">The Studio</p>
+                            <p class="h6">Mayfair, London, UK</p>
+                        </div>
+                        <div class="contact-detail mb-4">
+                            <i class="fas fa-envelope text-gold mb-2"></i>
+                            <p class="small text-uppercase letter-spacing-2">Email Us</p>
+                            <p class="h6">hello@shootatsight.com</p>
+                        </div>
+                        <div class="contact-detail">
+                            <p class="small text-uppercase letter-spacing-2 mb-3">Connect</p>
+                            <div class="social-links">
+                                <a href="#" class="me-4"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="me-4"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6" data-aos="fade-left">
-                    <form id="contactForm">
-                        <div class="mb-4">
-                            <input type="text" class="form-control" placeholder="YOUR NAME" required>
-                        </div>
-                        <div class="mb-4">
-                            <input type="email" class="form-control" placeholder="EMAIL ADDRESS" required>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="WEDDING DATE">
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="contact-form-wrapper p-4 p-md-5">
+                        <form id="contactForm" class="floral-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="input-group-custom">
+                                        <input type="text" class="form-control" id="name" placeholder=" " required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="input-group-custom">
+                                        <input type="email" class="form-control" id="email" placeholder=" " required>
+                                        <label for="email">Email Address</label>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="LOCATION">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="input-group-custom">
+                                        <input type="text" class="form-control" id="date" placeholder=" ">
+                                        <label for="date">Wedding Date</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="input-group-custom">
+                                        <input type="text" class="form-control" id="location" placeholder=" ">
+                                        <label for="location">Venue / Location</label>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mb-4">
-                            <textarea class="form-control" rows="5" placeholder="TELL US YOUR STORY"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-premium w-100">Send Inquiry</button>
-                    </form>
+                            <div class="mb-5">
+                                <div class="input-group-custom">
+                                    <textarea class="form-control" id="message" rows="4" placeholder=" "></textarea>
+                                    <label for="message">Your Message</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-bloom w-100">
+                                <span class="btn-text">Send Your Love</span>
+                                <div class="bloom-effect"></div>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Success Popup / Modal -->
+    <div id="successModal" class="success-modal">
+        <div class="modal-content-floral">
+            <div class="flower-bloom-animation">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="center"></div>
+            </div>
+            <h2 class="mt-4">Message Received!</h2>
+            <p>Our hearts are blooming with joy. We'll be in touch with you very soon.</p>
+            <button class="btn btn-premium mt-4" id="closeModal">Close</button>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-5">

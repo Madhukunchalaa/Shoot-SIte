@@ -26,8 +26,8 @@
     <div class="custom-cursor-follower"></div>
 
     <!-- Preloader -->
-    <div id="preloader" style="position: fixed; top:0; left:0; width:100%; height:100%; background: #0f0f0f; z-index: 10001; display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Playfair Display'; letter-spacing: 5px;">
-        <h2 data-aos="zoom-in">Shoot @ Sight</h2>
+    <div id="preloader" style="position: fixed; top:0; left:0; width:100%; height:100%; background: #0f0f0f; z-index: 10001; display: flex; align-items: center; justify-content: center;">
+        <img src="images/logo (1).png" alt="Shoot @ Sight" style="height: 90px; filter: invert(1) brightness(2); opacity: 0; animation: preloaderFadeIn 0.8s forwards 0.3s;">
     </div>
 
     <!-- Navigation -->
@@ -63,7 +63,7 @@
     <!-- Section 1: Hero -->
     <header class="hero">
         <div class="hero-parallax-bg">
-            <img src="images/img9.jpg" alt="Premium Wedding Photography" class="hero-image">
+            <img src="images/hero_image_v2.png" alt="Premium Wedding Photography" class="hero-image initial-blur">
         </div>
         <div class="camera-viewfinder">
             <div class="corner tl"></div>
@@ -239,29 +239,109 @@
         </div>
     </section>
 
-    <!-- Section 5: The Experience -->
-    <section id="experience" class="bg-dark text-white">
-        <div class="container">
+    <!-- Section: Cinematic Film -->
+    <section id="film" class="video-section">
+        <div class="video-section-bg"></div>
+        <div class="container position-relative" style="z-index:2;">
+
+            <!-- Title -->
             <div class="section-title" data-aos="fade-up">
-                <h2 class="text-white">The Experience</h2>
+                <h2 class="text-white">The Film</h2>
+                <p class="text-gold mt-2" style="letter-spacing:6px; font-size:0.75rem; text-transform:uppercase;">A story told in motion</p>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4" data-aos="fade-right">
-                    <h3 class="text-gold">01.</h3>
-                    <h4>Consultation</h4>
-                    <p class="text-muted">Understanding your vision and personal style.</p>
+
+            <!-- Stylish video card -->
+            <div class="video-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="video-card-glow"></div>
+                <div class="video-corner tl"></div>
+                <div class="video-corner tr"></div>
+                <div class="video-corner bl"></div>
+                <div class="video-corner br"></div>
+                <div class="video-responsive">
+                    <iframe
+                        id="filmIframe"
+                        src="https://www.youtube.com/embed/uJYT8dm1YKg?controls=0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&mute=1&autoplay=1&loop=1&playlist=uJYT8dm1YKg"
+                        title="Shoot @ Sight Cinematic Film"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                <div class="col-md-4" data-aos="fade-up">
-                    <h3 class="text-gold">02.</h3>
-                    <h4>The Big Day</h4>
-                    <p class="text-muted">Unobtrusive, cinematic coverage of every moment.</p>
+                <!-- Logo/UI blockers -->
+                <div class="video-block-logo"></div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="cinematography.html" class="btn btn-gold">View All Films</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: The Experience -->
+    <section id="experience" class="exp-light-section">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="exp-light-header" data-aos="fade-up">
+                <p class="exp-light-label">A simple, thoughtful process</p>
+                <h2 class="exp-light-title">The Experience</h2>
+            </div>
+
+            <!-- Timeline steps -->
+            <div class="exp-light-timeline">
+
+                <!-- Horizontal connector line (desktop) -->
+                <div class="exp-light-rule" data-aos="fade-up" data-aos-delay="100">
+                    <div class="exp-light-rule-fill"></div>
                 </div>
-                <div class="col-md-4" data-aos="fade-left">
-                    <h3 class="text-gold">03.</h3>
-                    <h4>Handover</h4>
-                    <p class="text-muted">Premium luxury album and digital collection.</p>
+
+                <div class="row justify-content-between">
+
+                    <!-- Step 1 -->
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="0">
+                        <div class="exp-light-step">
+                            <div class="exp-light-dot">
+                                <span class="exp-light-dot-inner"></span>
+                            </div>
+                            <div class="exp-light-step-num">01</div>
+                            <h4 class="exp-light-step-title">Consultation</h4>
+                            <p class="exp-light-step-text">We meet, listen, and understand your vision — building a plan entirely around your story.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="150">
+                        <div class="exp-light-step exp-light-step--mid">
+                            <div class="exp-light-dot">
+                                <span class="exp-light-dot-inner"></span>
+                            </div>
+                            <div class="exp-light-step-num">02</div>
+                            <h4 class="exp-light-step-title">The Big Day</h4>
+                            <p class="exp-light-step-text">We are present — silently capturing every unscripted, genuine moment of your celebration.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="exp-light-step">
+                            <div class="exp-light-dot">
+                                <span class="exp-light-dot-inner"></span>
+                            </div>
+                            <div class="exp-light-step-num">03</div>
+                            <h4 class="exp-light-step-title">Handover</h4>
+                            <p class="exp-light-step-text">A bespoke album and your full digital gallery — memories crafted to last a lifetime.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+                <a href="contact.html" class="btn btn-premium">Begin Your Journey</a>
+            </div>
+
         </div>
     </section>
 

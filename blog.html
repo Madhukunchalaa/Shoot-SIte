@@ -47,65 +47,158 @@
         </div>
     </nav>
 
-    <header class="blog-header">
-        <div class="container">
-            <h1 data-aos="fade-down">The Journal</h1>
-            <p class="lead" data-aos="fade-up">Stories of Love, Light, and Legacy</p>
+    <!-- Journal Header -->
+    <header class="journal-header">
+        <div class="container text-center">
+            <span class="journal-eyebrow" data-aos="fade-up">Est. 2026</span>
+            <h1 class="display-3" data-aos="fade-up" data-aos-delay="100">The Journal</h1>
+            <p class="journal-subtitle" data-aos="fade-up" data-aos-delay="200">Reflections on Love, Light, and the Art of Stillness</p>
+            <div class="journal-divider" data-aos="zoom-in" data-aos-delay="300"></div>
         </div>
     </header>
 
-    <section class="py-5">
+    <!-- Featured Post -->
+    <section class="featured-post-section py-5">
+        <div class="container">
+            <div class="row g-0 align-items-center featured-card" data-aos="fade-up">
+                <div class="col-lg-7 overflow-hidden">
+                    <div class="featured-img-wrap">
+                        <img src="images/img1.jpg" alt="Featured Story" class="featured-img">
+                    </div>
+                </div>
+                <div class="col-lg-5 p-4 p-md-5 bg-white">
+                    <span class="text-gold text-uppercase letter-spacing-3 mb-3 d-block">Featured Story</span>
+                    <h2 class="mb-4">The Secret to Authentic Wedding Portraits</h2>
+                    <p class="text-muted mb-4">How we create a space for genuine emotion to unfold in front of the lens, capturing more than just a image.</p>
+                    <a href="#" class="btn-journal-link">Read the Essay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid & Sidebar -->
+    <section class="py-5 position-relative">
+        <!-- Subtle Floral Background -->
+        <div class="floral-bg-accent op-1"></div>
+        
         <div class="container">
             <div class="row">
-                <!-- Main Content -->
+                <!-- Main Grid -->
                 <div class="col-lg-8">
-                    <article class="blog-card" data-aos="fade-up">
-                        <img src="assets/img/blog1.png" alt="Blog Post 1">
-                        <div class="blog-card-body">
-                            <span class="blog-category">Planning</span>
-                            <h2 class="mt-2">10 Tips for Your Perfect Golden Hour Wedding</h2>
-                            <p class="text-muted">April 23, 2026 | By AURA Editorial</p>
-                            <p>Capture the magic of the setting sun with these essential tips for outdoor ceremonies...</p>
-                            <a href="#" class="text-gold">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                    <div class="row g-4">
+                        <!-- Post 1 -->
+                        <div class="col-md-6 mb-4" data-aos="fade-up">
+                            <article class="journal-post">
+                                <div class="journal-post-img">
+                                    <img src="images/img3.jpg" alt="Golden Hour">
+                                    <div class="post-overlay"></div>
+                                </div>
+                                <div class="journal-post-body mt-4">
+                                    <span class="post-cat">Planning</span>
+                                    <h3 class="h4 mt-2">10 Tips for Your Perfect Golden Hour Wedding</h3>
+                                    <p class="small text-muted mb-3">April 23, 2026</p>
+                                    <p class="post-excerpt">Capture the magic of the setting sun with these essential tips for outdoor ceremonies...</p>
+                                    <a href="#" class="btn-journal-link">Continue Reading</a>
+                                </div>
+                            </article>
                         </div>
-                    </article>
+                        
+                        <!-- Post 2 -->
+                        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <article class="journal-post">
+                                <div class="journal-post-img">
+                                    <img src="images/img5.jpg" alt="Swiss Alps">
+                                    <div class="post-overlay"></div>
+                                </div>
+                                <div class="journal-post-body mt-4">
+                                    <span class="post-cat">Destinations</span>
+                                    <h3 class="h4 mt-2">Epic Locations: Shooting in the Swiss Alps</h3>
+                                    <p class="small text-muted mb-3">April 15, 2026</p>
+                                    <p class="post-excerpt">Our recent journey to the heart of the mountains for an unforgettable destination elopement...</p>
+                                    <a href="#" class="btn-journal-link">Continue Reading</a>
+                                </div>
+                            </article>
+                        </div>
 
-                    <article class="blog-card" data-aos="fade-up">
-                        <img src="assets/img/portfolio4.png" alt="Blog Post 2">
-                        <div class="blog-card-body">
-                            <span class="blog-category">Destinations</span>
-                            <h2 class="mt-2">Epic Locations: Shooting in the Swiss Alps</h2>
-                            <p class="text-muted">April 15, 2026 | By AURA Editorial</p>
-                            <p>Our recent journey to the heart of the mountains for an unforgettable destination elopement...</p>
-                            <a href="#" class="text-gold">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                        <!-- Post 3 -->
+                        <div class="col-md-6 mb-4" data-aos="fade-up">
+                            <article class="journal-post">
+                                <div class="journal-post-img">
+                                    <img src="images/img7.jpg" alt="Wedding Day">
+                                    <div class="post-overlay"></div>
+                                </div>
+                                <div class="journal-post-body mt-4">
+                                    <span class="post-cat">Weddings</span>
+                                    <h3 class="h4 mt-2">The Intimacy of Small Gatherings</h3>
+                                    <p class="small text-muted mb-3">March 30, 2026</p>
+                                    <p class="post-excerpt">Why intimate weddings allow for the most heartfelt and genuine photographic storytelling...</p>
+                                    <a href="#" class="btn-journal-link">Continue Reading</a>
+                                </div>
+                            </article>
                         </div>
-                    </article>
+
+                        <!-- Post 4 -->
+                        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <article class="journal-post">
+                                <div class="journal-post-img">
+                                    <img src="images/img9.jpg" alt="Album Layout">
+                                    <div class="post-overlay"></div>
+                                </div>
+                                <div class="journal-post-body mt-4">
+                                    <span class="post-cat">Couture</span>
+                                    <h3 class="h4 mt-2">Designing Your Legacy Wedding Album</h3>
+                                    <p class="small text-muted mb-3">March 12, 2026</p>
+                                    <p class="post-excerpt">The importance of physical prints in an age of digital noise. How we craft your story...</p>
+                                    <a href="#" class="btn-journal-link">Continue Reading</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="text-center mt-5" data-aos="fade-up">
+                        <a href="#" class="pagination-link active">1</a>
+                        <a href="#" class="pagination-link">2</a>
+                        <a href="#" class="pagination-link">3</a>
+                    </div>
                 </div>
 
                 <!-- Sidebar -->
                 <div class="col-lg-4 ps-lg-5">
-                    <div class="mb-5" data-aos="fade-left">
-                        <h4 class="mb-4">Categories</h4>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a href="#">Weddings</a></li>
-                            <li class="mb-2"><a href="#">Planning Tips</a></li>
-                            <li class="mb-2"><a href="#">Destinations</a></li>
-                            <li class="mb-2"><a href="#">Cinematography</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="mb-5" data-aos="fade-left" data-aos-delay="200">
-                        <h4 class="mb-4">Newsletter</h4>
-                        <p>Join our exclusive list for wedding inspiration.</p>
-                        <div class="input-group">
-                            <input type="email" class="form-control rounded-0" placeholder="Your Email">
-                            <button class="btn btn-premium btn-sm">Join</button>
+                    <div class="journal-sidebar">
+                        <div class="sidebar-widget mb-5" data-aos="fade-left">
+                            <h4 class="widget-title">Search the Journal</h4>
+                            <div class="search-wrap">
+                                <input type="text" placeholder="Keywords...">
+                                <button><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget mb-5" data-aos="fade-left" data-aos-delay="100">
+                            <h4 class="widget-title">By Category</h4>
+                            <ul class="journal-cats">
+                                <li><a href="#">Stories of Love <span>(12)</span></a></li>
+                                <li><a href="#">Planning Guides <span>(8)</span></a></li>
+                                <li><a href="#">Destinations <span>(5)</span></a></li>
+                                <li><a href="#">Behind the Lens <span>(3)</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget mb-5" data-aos="fade-left" data-aos-delay="200">
+                            <div class="newsletter-sidebar p-4 text-center">
+                                <i class="fas fa-paper-plane text-gold mb-3 h3"></i>
+                                <h4>The Newsletter</h4>
+                                <p class="small text-muted mb-4">Inspiration delivered to your inbox once a month.</p>
+                                <input type="email" class="form-control rounded-0 mb-3" placeholder="Your Email Address">
+                                <button class="btn btn-premium btn-sm w-100">Subscribe</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-5">
