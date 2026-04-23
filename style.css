@@ -985,11 +985,12 @@ section {
 /* ============================================
    CINEMATIC VIDEO SECTION
    ============================================ */
-.video-section {
+#film, .video-section {
     position: relative;
     padding: 100px 0;
-    background: #080808;
+    background: #080808 !important; /* Force dark background */
     overflow: hidden;
+    z-index: 1;
 }
 
 .video-section-bg {
@@ -999,18 +1000,22 @@ section {
         radial-gradient(ellipse at 20% 50%, rgba(181,157,123,0.07) 0%, transparent 60%),
         radial-gradient(ellipse at 80% 50%, rgba(181,157,123,0.07) 0%, transparent 60%);
     pointer-events: none;
+    z-index: -1;
 }
 
 .video-section::before,
-.video-section::after {
+.video-section::after,
+#film::before,
+#film::after {
     content: '';
     position: absolute;
     left: 0; right: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent, rgba(181,157,123,0.3), transparent);
+    z-index: 2;
 }
-.video-section::before { top: 0; }
-.video-section::after  { bottom: 0; }
+.video-section::before, #film::before { top: 0; }
+.video-section::after, #film::after  { bottom: 0; }
 
 /* Section title on dark bg */
 .video-section .section-title h2::after {
@@ -1097,29 +1102,7 @@ section {
 .text-gold { color: var(--secondary-color); }
 
 
-.video-section-bg {
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(ellipse at 20% 50%, rgba(181,157,123,0.06) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 50%, rgba(181,157,123,0.06) 0%, transparent 60%);
-    pointer-events: none;
-}
-
-/* Animated horizontal lines (film strip feel) */
-.video-section::before,
-.video-section::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(181,157,123,0.3), transparent);
-}
-.video-section::before { top: 0; }
-.video-section::after  { bottom: 0; }
-
-/* Section title override for dark bg */
+/* Section title on dark bg */
 .video-section .section-title h2::after {
     background: var(--secondary-color);
 }
