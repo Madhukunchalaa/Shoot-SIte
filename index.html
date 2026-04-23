@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoot @ Sight | Premium Wedding Photography</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div id="preloader" style="position: fixed; top:0; left:0; width:100%; height:100%; background: #0f0f0f; z-index: 10001; display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Playfair Display'; letter-spacing: 5px;">
+        <h2 data-aos="zoom-in">Shoot @ Sight</h2>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo (1).png" alt="Shoot @ Sight Logo" height="60">
+            </a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-white" href="engagement.html">Engagement</a></li>
+                            <li><a class="dropdown-item text-white" href="cinematography.html">Cinematography</a></li>
+                            <li><a class="dropdown-item text-white" href="destination.html">Destinations</a></li>
+                            <li><a class="dropdown-item text-white" href="pre-wedding.html">Pre-Wedding</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero -->
+    <header class="hero">
+        <div class="hero-parallax-bg">
+            <img src="images/img9.jpg" alt="Premium Wedding Photography" class="hero-image">
+        </div>
+        <div class="camera-viewfinder">
+            <div class="corner tl"></div>
+            <div class="corner tr"></div>
+            <div class="corner bl"></div>
+            <div class="corner br"></div>
+            <div class="crosshair"></div>
+            <div class="rec-dot">REC</div>
+        </div>
+        <div class="shutter-flash"></div>
+        <div class="hero-dust-overlay"></div>
+        <div class="hero-grain"></div>
+        <div class="hero-overlay-cinematic"></div>
+        
+        <div class="container hero-content-premium text-center">
+            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1500">
+                <span>DISCOVER</span>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-0 overflow-hidden">
+        <div class="container-fluid p-0">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <div class="about-img-container p-lg-5">
+                        <img src="images/team.jpg" alt="Photographer Team" class="img-fluid shadow-2xl" style="transform: scale(1.1); transition: transform 2s ease;">
+                    </div>
+                </div>
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="p-5 p-lg-10">
+                        <div class="section-title text-start mb-5">
+                            <span class="text-gold mb-2 d-block" style="letter-spacing: 5px; font-size: 0.7rem; text-transform: uppercase;">Since 2012</span>
+                            <h2 style="font-family: var(--heading-font); font-style: italic;">The Art of Observation</h2>
+                        </div>
+                        <p class="lead mb-4" style="font-family: var(--heading-font); font-size: 1.8rem; font-weight: 300;">"Capturing the quiet elegance of your most cherished day."</p>
+                        <p class="text-muted mb-5" style="font-size: 1.1rem; font-weight: 300;">Shoot @ Sight is a boutique studio dedicated to documenting weddings with a cinematic and editorial eye. We believe in the power of authenticity, focusing on the genuine emotions and sophisticated details that define your celebration.</p>
+                        <a href="contact.html" class="btn btn-premium">View The Process</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Services -->
+    <section id="services" class="bg-light">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Expertise</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <a href="engagement.html" class="h-100 d-block text-decoration-none">
+                        <div class="service-card">
+                            <i class="fas fa-camera-retro"></i>
+                            <h4>Engagement</h4>
+                            <p>Timeless photography that captures every tradition.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <a href="cinematography.html" class="h-100 d-block text-decoration-none">
+                        <div class="service-card">
+                            <i class="fas fa-video"></i>
+                            <h4>Cinematography</h4>
+                            <p>High-end film production for your love story.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <a href="destination.html" class="h-100 d-block text-decoration-none">
+                        <div class="service-card">
+                            <i class="fas fa-plane"></i>
+                            <h4>Destinations</h4>
+                            <p>Available worldwide for your exotic celebrations.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <a href="pre-wedding.html" class="h-100 d-block text-decoration-none">
+                        <div class="service-card">
+                            <i class="fas fa-gem"></i>
+                            <h4>Pre-Wedding</h4>
+                            <p>Elegant portrait sessions before the big day.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>The Portfolio</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="portfolio-item">
+                        <img src="images/img1.jpg" alt="Portfolio 1">
+                        <div class="portfolio-overlay">
+                            <h4>The Ethereal Bride</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-item">
+                        <img src="images/img2.jpg" alt="Portfolio 2">
+                        <div class="portfolio-overlay">
+                            <h4>Midnight Waltz</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-item">
+                        <img src="images/img3.jpg" alt="Portfolio 3">
+                        <div class="portfolio-overlay">
+                            <h4>Timeless Details</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="portfolio-item">
+                        <img src="images/img4.jpg" alt="Portfolio 4">
+                        <div class="portfolio-overlay">
+                            <h4>Epic Vows</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-item">
+                        <img src="images/img5.jpg" alt="Portfolio 5">
+                        <div class="portfolio-overlay">
+                            <h4>Golden Hour</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-item">
+                        <img src="images/img6.jpg" alt="Portfolio 6">
+                        <div class="portfolio-overlay">
+                            <h4>The First Look</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="portfolio-item">
+                        <img src="images/img7.jpg" alt="Portfolio 7">
+                        <div class="portfolio-overlay">
+                            <h4>Rustic Charm</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-item">
+                        <img src="images/img8.jpg" alt="Portfolio 8">
+                        <div class="portfolio-overlay">
+                            <h4>Classic Portrait</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-item">
+                        <img src="images/img9.jpg" alt="Portfolio 9">
+                        <div class="portfolio-overlay">
+                            <h4>Grand Celebration</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: The Experience -->
+    <section id="experience" class="bg-dark text-white">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 class="text-white">The Experience</h2>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4" data-aos="fade-right">
+                    <h3 class="text-gold">01.</h3>
+                    <h4>Consultation</h4>
+                    <p class="text-muted">Understanding your vision and personal style.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <h3 class="text-gold">02.</h3>
+                    <h4>The Big Day</h4>
+                    <p class="text-muted">Unobtrusive, cinematic coverage of every moment.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <h3 class="text-gold">03.</h3>
+                    <h4>Handover</h4>
+                    <p class="text-muted">Premium luxury album and digital collection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Testimonials -->
+    <section id="testimonials">
+        <div class="container text-center">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Kind Words</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="fs-4 italic">"Absolutely breathtaking work. They didn't just take photos; they captured the very essence of our love story."</p>
+                                <h5 class="mt-4 text-gold">— Sarah & Michael</h5>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="fs-4 italic">"The most professional and creative team we've ever worked with. The results are pure magic."</p>
+                                <h5 class="mt-4 text-gold">— Elena & David</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Featured In -->
+    <section id="awards" class="py-5 bg-light">
+        <div class="container text-center">
+            <div class="row align-items-center opacity-50">
+                <div class="col-md-3 col-6" data-aos="fade-up">VOGUE</div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">BRIDES</div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">BAZAAR</div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">WEDDING SUTRA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: CTA -->
+    <section id="cta" class="text-center py-5">
+        <div class="container" data-aos="zoom-out">
+            <h2 class="mb-4">Ready to tell your story?</h2>
+            <a href="contact.html" class="btn btn-premium">Reserve Your Date</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Shoot @ Sight</h2>
+            <div class="social-links mb-4">
+                <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <p class="text-muted">&copy; 2026 Shoot @ Sight Photography. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Portfolio Lightbox -->
+    <div id="portfolioLightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-camera-viewfinder">
+                <div class="corner tl"></div>
+                <div class="corner tr"></div>
+                <div class="corner bl"></div>
+                <div class="corner br"></div>
+                <div class="crosshair"></div>
+                <div class="lightbox-rec">REC</div>
+            </div>
+            <div class="lightbox-shutter-flash"></div>
+            <img id="lightboxImg" src="" alt="Portfolio Large">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
