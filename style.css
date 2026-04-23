@@ -39,9 +39,10 @@ body {
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.08s ease;
+    z-index: 999999; /* Ultra high z-index */
+    transition: width 0.3s ease, height 0.3s ease, background 0.3s ease, transform 0.08s ease;
     transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow for white backgrounds */
 }
 
 .custom-cursor-follower {
@@ -53,8 +54,8 @@ body {
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 9998;
-    transition: transform 0.18s ease;
+    z-index: 999998;
+    transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, transform 0.18s ease;
     transform: translate(-50%, -50%);
 }
 

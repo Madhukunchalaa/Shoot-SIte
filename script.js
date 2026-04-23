@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Cursor hover states
     document.querySelectorAll('a, button, .portfolio-item, .service-card').forEach(el => {
         el.addEventListener('mouseenter', () => {
-            if (cursor)   { cursor.style.width = '30px';   cursor.style.height = '30px';   cursor.style.background = 'rgba(181,157,123,0.5)'; }
+            if (cursor)   { cursor.style.width = '30px';   cursor.style.height = '30px';   cursor.style.background = 'rgba(181,157,123,0.8)'; }
             if (follower) { follower.style.width = '55px'; follower.style.height = '55px'; }
         });
         el.addEventListener('mouseleave', () => {
