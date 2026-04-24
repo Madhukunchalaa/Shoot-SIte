@@ -87,6 +87,31 @@ a {
     border-bottom: 1px solid rgba(181, 157, 123, 0.2);
 }
 
+/* Fix for desktop navbar height when using offcanvas container */
+@media (min-width: 992px) {
+    .offcanvas {
+        visibility: visible !important;
+        transform: none !important;
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+        background: transparent !important;
+        border: none !important;
+        transition: none !important;
+    }
+    .offcanvas-body {
+        display: flex !important;
+        padding: 0 !important;
+        overflow: visible !important;
+    }
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0 !important;
+    }
+    .offcanvas-header {
+        display: none !important;
+    }
+}
+
 .navbar.scrolled .nav-link {
     color: #1a1a1a;
 }

@@ -40,31 +40,32 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <!-- Offcanvas Menu -->
-            <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar">
-                <div class="offcanvas-header border-bottom p-4">
+            <!-- Offcanvas Menu (Mobile) / Navbar Menu (Desktop) -->
+            <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom p-4 d-lg-none">
                     <img src="images/logo (1).png" alt="Shoot @ Sight" height="40">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body p-5">
-                    <ul class="navbar-nav ms-auto gap-4">
-                        <li class="nav-item"><a class="nav-link active h4" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link h4" href="#about">About</a></li>
+                <div class="offcanvas-body p-lg-0">
+                    <ul class="navbar-nav ms-auto gap-lg-4">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle h4" href="#" id="offcanvasServices" role="button" data-bs-toggle="dropdown">Services</a>
-                            <ul class="dropdown-menu border-0 bg-light p-3">
-                                <li><a class="dropdown-item py-2" href="engagement.html">Engagement</a></li>
-                                <li><a class="dropdown-item py-2" href="cinematography.html">Cinematography</a></li>
-                                <li><a class="dropdown-item py-2" href="destination.html">Destinations</a></li>
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasServices" role="button" data-bs-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu border-0 shadow-sm p-lg-3">
+                                <li><a class="dropdown-item py-lg-2" href="engagement.html">Engagement</a></li>
+                                <li><a class="dropdown-item py-lg-2" href="cinematography.html">Cinematography</a></li>
+                                <li><a class="dropdown-item py-lg-2" href="destination.html">Destinations</a></li>
                                 <li><a class="dropdown-item py-2" href="pre-wedding.html">Pre-Wedding</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link h4" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link h4" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link h4" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                     
-                    <div class="mt-auto pt-5">
+                    <!-- Mobile only social footer -->
+                    <div class="mt-auto pt-5 d-lg-none">
                         <p class="small text-gold letter-spacing-3 mb-3">FOLLOW US</p>
                         <div class="d-flex gap-4 fs-5">
                             <a href="#"><i class="fab fa-instagram"></i></a>
